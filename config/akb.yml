@@ -1,0 +1,20 @@
+#specify listen port
+ports:
+  service: 8080
+  monitor: 8091
+
+base_dir: /home/work/akb
+
+#specify log file
+logging:
+  file: /home/work/akb/log/akb.log
+  level: DEBUG
+
+#database config
+subscribe:
+  database: mysql2://jca:jca@127.0.0.1:8584/cloud_advisor
+  refresh_interval: 2
+
+analyze:
+  interval: 1
+
